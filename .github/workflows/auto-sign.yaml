@@ -2,9 +2,9 @@ name: Run Auto Sign
 
 on:
   workflow_dispatch:
-  #schedule:
+  schedule:
     # UTC time
-    #- cron: "0 0 * * *"
+    - cron: "0 0 * * *"
 
 env:
   SM_USERNAME: ${{ secrets.SM_USERNAME }}
